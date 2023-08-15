@@ -14,13 +14,13 @@ export default function Stories() {
         axios.get('http://localhost:8001/story').then((res) => {
             setData(res.data)
         })
-    }, [data])
+    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:8001/follow').then((res) => {
             setFollow(res.data)
         })
-    }, [follow])
+    }, [])
 
     useEffect(() => {
         for (let i = 0; i < follow.length; i++) {

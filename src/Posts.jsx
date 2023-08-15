@@ -20,7 +20,7 @@ export default function Posts({type, cap}) {
 
                         axios
                             .post(
-                                'https://api.cloudinary.com/v1_1/ddvajyjou/image/upload',
+                                'http://api.cloudinary.com/v1_1/ddvajyjou/image/upload',
                                 formData
                             )
                             .then(async response => {

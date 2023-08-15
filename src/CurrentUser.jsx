@@ -23,19 +23,19 @@ export default function CurrentUser() {
         axios.get('http://localhost:8001/follow').then((res) => {
             setData(res.data)
         })
-    }, [data])
+    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:8001/post').then((res) => {
             setPosts(res.data)
         })
-    }, [posts])
+    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:8001/story').then((res) => {
             setStories(res.data)
         })
-    }, [stories])
+    }, [])
 
     posts.map((post, i) => {
         if (post.from == localStorage.getItem('loginUsername')) count = count + 1

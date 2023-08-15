@@ -17,7 +17,7 @@ export default function Navbar() {
         axios.get('http://localhost:8001/profile').then((res) => {
             setData(res.data)
         })
-    }, [data])
+    }, [])
 
     return (
         <main>

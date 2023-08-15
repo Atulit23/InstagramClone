@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('http://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 p {
   font-family: 'Barlow', sans-serif;
@@ -977,7 +977,7 @@ textarea {
 }
 
 .story__main {
-  background: url(https://res.cloudinary.com/ddvajyjou/image/upload/v1666161478/q9mwbmvzqaxkyxexfbwy.jpg);
+  background: url(http://res.cloudinary.com/ddvajyjou/image/upload/v1666161478/q9mwbmvzqaxkyxexfbwy.jpg);
   height: 95%;
   width: 25rem;
   background-size: cover;
@@ -1200,7 +1200,7 @@ a {
 }
 
 #scroll__main {
-  background: url('https://static.cdninstagram.com/rsrc.php/v3/y8/r/ZWR9C7_JdnP.png');
+  background: url('http://static.cdninstagram.com/rsrc.php/v3/y8/r/ZWR9C7_JdnP.png');
   width: 45px;
   height: 45px;
   background-repeat: no-repeat;
@@ -1317,7 +1317,7 @@ a {
   }
 
   #scroll__main {
-    background: url(https://static.cdninstagram.com/rsrc.php/v3/y8/r/ZWR9C7_JdnP.png);
+    background: url(http://static.cdninstagram.com/rsrc.php/v3/y8/r/ZWR9C7_JdnP.png);
     width: 45px;
     height: 45px;
     background-repeat: no-repeat;

@@ -18,7 +18,7 @@ function Login() {
         axios.get('http://localhost:8001/profile').then((res) => {
             setDataUser(res.data)
         })
-    }, [data] || [dataUser])
+    }, [data, dataUser])
 
 
     return (

@@ -13,7 +13,7 @@ function SignUp() {
         signaxios.get('/signup').then((res) => {
             setData(res.data)
         })
-    }, [data])
+    }, [])
 
     return (
         <main>

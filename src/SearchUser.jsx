@@ -32,31 +32,31 @@ export default function SearchUser() {
         axios.get('http://localhost:8001/follow').then((res) => {
             setData(res.data)
         })
-    }, [data])
+    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:8001/profile').then((res) => {
             setDataUser(res.data)
         })
-    }, [dataUser])
+    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:8001/chat').then((res) => {
             setChatData(res.data)
         })
-    }, [chatData])
+    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:8001/post').then((res) => {
             setPosts(res.data)
         })
-    }, [posts])
+    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:8001/story').then((res) => {
             setStories(res.data)
         })
-    }, [stories])
+    }, [])
 
     posts.map((post, i) => {
         if (post.from == localStorage.getItem('currUsername')) count = count + 1

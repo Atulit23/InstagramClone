@@ -15,7 +15,7 @@ export default function Explore() {
         axios.get('http://localhost:8001/post').then((res) => {
             setPosts(res.data)
         })
-    }, [posts])
+    }, [])
 
     return (
         <main>

@@ -15,13 +15,13 @@ export default function Home() {
         axios.get('http://localhost:8001/post').then((res) => {
             setPosts(res.data)
         })
-    }, [posts])
+    }, [])
 
     useEffect(() => {
         axios.get('http://localhost:8001/follow').then((res) => {
             setFollow(res.data)
         })
-    }, [follow])
+    }, [])
 
     useEffect(() => {
         for (let i = 0; i < follow.length; i++) {

@@ -36,7 +36,7 @@ export default function Chats({ directName }) {
             }
         }
 
-    }, [data])
+    }, [])
 
     return (
         <main>

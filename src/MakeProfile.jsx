@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 // import { MongoClient } from "mongodb";
 
-// https://uploads-ssl.webflow.com/5ee6e50fe4be3a81f496e5ad/601a2e29a4cc31ad238481c6_instagram%201920x1080.jpg
+// http://uploads-ssl.webflow.com/5ee6e50fe4be3a81f496e5ad/601a2e29a4cc31ad238481c6_instagram%201920x1080.jpg
 
 export const MakeProfile = () => {
     const [name, setName] = useState('')
@@ -45,7 +45,7 @@ export const MakeProfile = () => {
 
                         axios
                             .post(
-                                'https://api.cloudinary.com/v1_1/ddvajyjou/image/upload',
+                                'http://api.cloudinary.com/v1_1/ddvajyjou/image/upload',
                                 formData
                             )
                             .then(async response => {
@@ -62,7 +62,7 @@ export const MakeProfile = () => {
                 </div>
                 <button className="submit" onClick={async () => {
                     if (img == '') {
-                        img = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'
+                        img = 'http://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'
                     }
                     await axios.post('http://localhost:8001/profile', { name: name, dob: dob, username: username, dp: img, bio: bio, email: localStorage.getItem('signEmail'), password: localStorage.getItem('signPass') })
                     await axios.post('http://localhost:8001/follow', { username: username, follower: [], following: [], dummyFollowers: [] })
